@@ -1,0 +1,58 @@
+body{
+    box-sizing: border-box;
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    position: absolute;
+}
+
+main{
+    width: 40%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #c9c8c8;
+    border: 3px solid #979595;
+}
+h1, p{
+    text-align: center;
+    position: relative;
+}
+
+  input[type=text], input[type=password] {
+    width: 25%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgb(52, 19, 172);
+    box-sizing: border-box;
+  }
+
+  #txtLogin{
+      position: relative;
+  }
+
+  .formularioLogin {
+    padding: 1px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+  button {
+    background-color: rgba(0, 136, 169, 1);
+    color: white;
+    padding: 5px 5px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    transition: all 0.7s ease 0s;
+  }
+
+  button:hover {
+    opacity: 0.6;
+  }
+
+ 
+  
