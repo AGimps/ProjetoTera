@@ -26,10 +26,6 @@ p {
     color: white;
 }
 
-div {
-    border-color: #1f2833;
-}
-
 header {
     display: flex;
     justify-content: space-between;
