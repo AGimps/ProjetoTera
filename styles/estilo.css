@@ -5,9 +5,6 @@
 }
 
 body {
-    /* background-color: #0b0c10; */
-    /* background-image: url(../Paginas/imagens/feather.jpg);
-    background-size: cover; */
     background-image: linear-gradient(90deg, #0b0c10, #1f2833);
 }
 
@@ -46,20 +43,6 @@ header {
     transform: translateX(-50%);
 }
 
-#grupoTerror {
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-
-#grupoHeroi {
-    padding-bottom: 20px;
-}
-
-#grupoAnimacao {
-    padding-bottom: 20px;
-}
-
 .estilo_links {
     list-style: none;
     font-weight: 500;
@@ -91,4 +74,45 @@ header {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
+}
+
+#textoDecoracaoLinks {
+    text-decoration: none;
+}
+
+.gruposFlex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    border-color: #c5c6c7;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.gruposAlign {
+    flex-basis: 50%;
+}
+
+.seriesFlex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    border-color: #c5c6c7;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.seriesAlign {
+    flex-basis: 50%;
+}
+
+.grupoDebate {
+    border-color: #c5c6c7;
+    border-style: solid;
+    border-radius: 10px;
+    width: 900px;
+}
+
+#debateEspaco{
+    padding-bottom: 10px;
 }
