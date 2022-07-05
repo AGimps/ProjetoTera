@@ -14,10 +14,10 @@ document.body.onload = function() {
       }
       
       const rndInt = aleatorioInteiro(1, 8);
-      
+
       escolhaVideo(rndInt);
-    
-      function escolhaVideo() {
+
+      function escolhaVideo(rndInt) {
         switch (rndInt) {
           case 1:
             document.getElementById('videoJanela').src = "https://www.youtube.com/embed/YFXHfEqMcis";

@@ -1,84 +1,127 @@
-body{
-    box-sizing: border-box;
-    margin-top: 100px;
-    background-color: rgb(255, 255, 255);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-header{
-    position: absolute;
+.body-login{
+    background-image: linear-gradient(90deg, #0b0c10, #1f2833);
 }
 
-main{
-    width: 40%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    background-color: #1f2833;
-    border: 3px solid #45a29e;
+.header-login{
+    min-height: 15vh;
 }
+
+.main-login{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.login-box{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content-box{
+  flex-basis: 30%;
+  border: 3px solid #45a29e;
+  padding: 5vh;
+}
+
 h1{
-    text-align: center;
-    position: relative;
     color: #66fcf1;
+    font-size: 2em;
+    padding-bottom: 10px;
 }
 
 p {
-    text-align: center;
-    position: relative;
     color: white;
+    font-size: 1rem;
+    padding-bottom: 10px;
 }
 
 form {
   color: white;
 }
 
-a {
+.login-register {
   color: white;
   text-decoration: none;
+  padding-left: 10px;
 }
 
 input[type=text], input[type=password], input[type=email] {
-    width: 25%;
-    padding: 5px 5px;
+    padding: 5px;
     margin: 8px 0;
-    display: inline-block;
     border: 2px solid rgb(52, 19, 172);
-    box-sizing: border-box;
   }
 
-  #txtLogin{
-      position: relative;
+  .div-button{
+    padding-bottom: 10px;
   }
 
-  .formularioLogin {
-    padding: 1px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-  #btnLogar {
+  .btnLogar {
     background-color: rgba(0, 136, 169, 1);
     color: white;
     padding: 5px 10px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 12%;
     transition: all 0.7s ease 0s;
   }
 
-  #btnRegistrar {
+  .checkbox-login{
+    margin-top: 10px;
+    
+  }
+
+  .login-register {
     background-color: rgba(0, 136, 169, 1);
     color: white;
     padding: 5px 10px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 15%;
     transition: all 0.7s ease 0s;
   }
 
-  button:hover {
+  .login-register:hover {
     opacity: 0.6;
+  }
+
+  .btnLogar:hover {
+    opacity: 0.6;
+  }
+
+  .desk-only{display:none;}
+
+  .mob-only{display:block;}
+
+  @media (min-width:600px){
+    
+    .desk-only{display:block;}
+      
+    .mob-only{display:none;}
+    
+    .login-box{
+      border: 3px solid #45a29e;
+      align-items: center;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction:column;
+      
+  }
+
+  .btnLogar {
+    margin: 8px 10px;
+  }
+    
   }
 
  

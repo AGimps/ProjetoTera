@@ -1,36 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/login.css">
-    <link rel="stylesheet" href="../styles/estilo.css">
     <script src="scripts/login.js"></script>
     <title>Login Serializando</title>
 </head>
-<body>
-    <main>
-        <header></header>
-        <h1>Serializando!</h1>
-        <p>O mundo das séries a um clique de distância!</p>
-        <form id= "Login" action="Paginas/serializando.html">
-            <div class="formularioLogin">
-                <div>
-                    <label for="txtLogin">Nome de Usuário</label>
-                    <input name = "txtLogin" type="text" id="txtLogin" placeholder="Digite seu login" required/>
+<body class="body-login">
+    <main class="main-login">
+        <header class="header-login"></header>
+        <section class="desk-only">
+            <div class="login-box">
+                <h1>Serializando!</h1>
+                <p>O mundo das séries a um clique de distância!</p>
+                <form id= "Login" action="Paginas/serializando.html">
+                    <div class="formularioLogin">
+                        <div>
+                            <label for="txtLogin">Nome de Usuário</label>
+                            <input name = "txtLogin" type="text" id="txtLogin" placeholder="Digite seu login" required/>
+                        </div>
+                    <div>
+                        <label for="txtSenha">Senha</label>
+                        <input name = "txtSenha" type="password" id="txtSenha" placeholder="Digite sua senha" required/>
+                    </div>
+                    <button type="submit" class="btnLogar">Logar</button>
+                    <a class="login-register" href="Paginas/cadastro.html">Cadastrar</a>
+                    <label class="checkbox-login">
+                        <input type="checkbox" checked="checked" /> Manter conectado.
+                    </label>
                 </div>
-                <div>
-                    <label for="txtSenha">Senha</label>
-                    <input name = "txtSenha" type="password" id="txtSenha" placeholder="Digite sua senha" required/>
-                </div>
-                <button type="submit" id="btnLogar">Logar</button>
-                <label>
-                    <input type="checkbox" checked="checked"/> Lembrar nesse navegador
-                </label>
-                <a style="padding-left: 10px;" href="Paginas/cadastro.html">Cadastrar nova conta</a>
+            </form>
             </div>
-    </form>
+        </section>
+        <section class="mob-only">
+            <div class="login-box">
+                <div class="content-box">
+                    <h1>Serializando!</h1>
+                    <p>O mundo das séries a um clique de distância!</p>
+                    <form id= "Login" action="Paginas/serializando.html">
+                        <div class="formularioLogin">
+                            <div>
+                                <label for="txtLogin">Nome de Usuário</label>
+                                <input name = "txtLogin" type="text" id="txtLogin" placeholder="Digite seu login" required/>
+                            </div>
+                        <div>
+                            <label for="txtSenha">Senha</label>
+                            <input name = "txtSenha" type="password" id="txtSenha" placeholder="Digite sua senha" required/>
+                        </div>
+                        <div class="div-button">
+                            <button type="submit" class="btnLogar">Logar</button>
+                        </div>
+                        <div>
+                            <a class="login-register" href="Paginas/cadastro.html">Cadastrar</a>
+                        </div>
+                        <label>
+                            <input class="checkbox-login" type="checkbox" checked="checked" /> Manter conectado.
+                        </label>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
